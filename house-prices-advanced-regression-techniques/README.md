@@ -24,3 +24,11 @@ Polymial Regressionは典型的な過学習を示している。Random Forestは
 |  test   |  0.85439  |  0.38913    |  0.16839  |  -0.03856  |  0.90044  |
 
 ZScoreによるスケーリングを実施。SVRはkernelがlinearもrbfもいまいち
+
+
+## 3rd Try
+KaggleへSubmit。
+<p align="center">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_house_predict_1st.PNG">
+</p>
+
