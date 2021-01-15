@@ -24,7 +24,7 @@ Features Scalingなし。
 Standard Scaling
 
 ## 3rd Try
-[Titanic Tutorial](https://www.kaggle.com/alexisbcook/titanic-tutorial)に倣って、Featuresを減らしてみる。
+[Titanic Tutorial](https://www.kaggle.com/alexisbcook/titanic-tutorial)に倣って、Featuresを減らしてみる。1st submission Score 0.76555から0.77511へ改善。Featuresはあればあるほど良いわけではない...?
 <p align="center">
   <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_titanic_2nd_result.PNG">
 </p>
