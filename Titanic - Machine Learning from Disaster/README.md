@@ -26,5 +26,5 @@ Standard Scaling
 ## 3rd Try
 [Titanic Tutorial](https://www.kaggle.com/alexisbcook/titanic-tutorial)に倣って、Featuresを減らしてみる。
 <p align="center">
-  <img width="240" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_titanic_2nd_result.PNG">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_titanic_2nd_result.PNG">
 </p>
