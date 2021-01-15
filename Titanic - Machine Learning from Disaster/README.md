@@ -14,3 +14,11 @@ Kaggle Competition - [Titanic - Machine Learning from Disaster](https://www.kagg
 | Accuracy       |  0.80717    |  0.72197  |  0.79372  |  0.78475  |  0.76233  |
 
 Features Scalingなし。
+
+## 2nd Try
+|      |  Logistic  |  K-Nearest  |  SVM  |  Naive Bayes  |  Random Forest  |
+| ---- | ---- | ---- |---- | ---- |---- |
+| ConfusionMatrix|  [[122  24]<br>[ 20  57]]  |  [[136  10]<br>[ 27  50]]  |  [[128  18]<br>[ 21  56]]  |  [[122  24]<br>[ 21  56]]  | [[131  15]<br>[ 36  41]]  |
+| Accuracy       |  0.80269    |  0.83408  |  0.82511  |  0.79821  |  0.77130  |
+
+Standard Scaling
