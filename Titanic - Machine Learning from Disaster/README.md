@@ -36,3 +36,24 @@ Add Standard Scaling
 | Accuracy       |  0.80269    |  0.74439  |  0.78924  |  0.79821  |  0.80269  |
 
 性別について、LabelEncoderからget_dummiesによるOneHotEncodingへ変更。劇的な改善、というわけにはいかなかった。
+
+## 5th Try
+Grid Searchを用いてRandomForestClassifierのハイパーパラメータを調整
+```
+from sklearn.model_selection import GridSearchCV
+grid_parameters = [
+    {'n_estimators': [1, 2, 5, 10, 100, 1000], 
+    'criterion': ['gini', 'entropy'],
+    'max_features': [1, 2, 5, 10, 20],
+    'min_samples_split': [1, 2, 5, 10, 20],
+    'min_samples_leaf': [1, 2, 5, 10, 20],
+    'bootstrap': [True, False],
+    }
+]
+
+grid_search = GridSearchCV(RandomForestClassifier(), grid_parameters, cv=5, scoring='accuracy', n_jobs = -1)
+grid_search.fit(X_train, y_train)
+grid_search.best_params_
+```
+
+後でsubmitして、結果を確認すること。
