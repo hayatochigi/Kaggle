@@ -6,6 +6,8 @@ Kaggle Competition - [Titanic - Machine Learning from Disaster](https://www.kagg
 - Naive Bayes
 - Random Forest Classification
 
+LightGBMは、ある程度基本のアルゴリズムで結果が出てからトライ。
+
 # Log
 ## 1st Try
 |      |  Logistic  |  K-Nearest  |  SVM  |  Naive Bayes  |  Random Forest  |
@@ -38,7 +40,7 @@ Add Standard Scaling
 性別について、LabelEncoderからget_dummiesによるOneHotEncodingへ変更。劇的な改善、というわけにはいかなかった。
 
 ## 5th Try
-Grid Searchを用いてRandomForestClassifierのハイパーパラメータを調整
+Grid Searchを用いてRandomForestClassifierのハイパーパラメータを調整。
 ```
 from sklearn.model_selection import GridSearchCV
 grid_parameters = [
@@ -56,4 +58,12 @@ grid_search.fit(X_train, y_train)
 grid_search.best_params_
 ```
 
-後でsubmitして、結果を確認すること。
+~~後でsubmitして、結果を確認すること。~~ --> 6thへ。。。
+
+## 6th Try
+Grid Search + FeaturesとEDAの見直し。何でもかんでもscaleすればよいってものではないみたい。名義尺度のscalingは止めて、AgeとFareのみを処理してみる。
+|      |  Logistic  |  K-Nearest  |  SVM  |  Naive Bayes  |  Random Forest  |
+| ---- | ---- | ---- |---- | ---- |---- |
+| ConfusionMatrix|  [[115  14]<br>[ 25  69]]  |  [[122   7]<br>[ 51  43]]  |  [[112  17]<br>[ 26  68]]  |  [[118  11]<br>[ 34  60]]  | [[121   8]<br>[ 30  64]]  |
+| Accuracy       |  0.82511    |  0.73991  |  0.80717  |  0.79821  |  0.82960  |
+
