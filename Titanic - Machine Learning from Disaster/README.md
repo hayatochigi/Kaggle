@@ -21,10 +21,18 @@ Features Scalingなし。
 | ConfusionMatrix|  [[122  24]<br>[ 20  57]]  |  [[136  10]<br>[ 27  50]]  |  [[128  18]<br>[ 21  56]]  |  [[122  24]<br>[ 21  56]]  | [[131  15]<br>[ 36  41]]  |
 | Accuracy       |  0.80269    |  0.83408  |  0.82511  |  0.79821  |  0.77130  |
 
-Standard Scaling
+Add Standard Scaling
 
 ## 3rd Try
 [Titanic Tutorial](https://www.kaggle.com/alexisbcook/titanic-tutorial)に倣って、Featuresを減らしてみる。1st submission Score 0.76555から0.77511へ改善。Featuresはあればあるほど良いわけではない...?
 <p align="center">
   <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_titanic_2nd_result.PNG">
 </p>
+
+## 4th Try
+|      |  Logistic  |  K-Nearest  |  SVM  |  Naive Bayes  |  Random Forest  |
+| ---- | ---- | ---- |---- | ---- |---- |
+| ConfusionMatrix|  [[122  14]<br>[ 30  57]]  |  [[128   8]<br>[ 49  38]]  |  [[119  17]<br>[ 30  57]]  |  [[118  18]<br>[ 27  60]]  | [[117  19]<br>[ 25  62]]  |
+| Accuracy       |  0.80269    |  0.74439  |  0.78924  |  0.79821  |  0.80269  |
+
+性別について、LabelEncoderからget_dummiesによるOneHotEncodingへ変更。劇的な改善、というわけにはいかなかった。
