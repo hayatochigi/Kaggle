@@ -32,3 +32,13 @@ KaggleへSubmit。
   <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_house_predict_1st.PNG">
 </p>
 
+## 4th Try
+|  R2 Score|  Linear  |  Polymial  |  SVR (linear)  |  SVR (rbf)  |  Random Forest  |
+| ---- | ---- | ---- |---- | ---- | ---- |
+|  train  |  0.95596  |  1.00000    |  0.08158  |  -0.05313  |  0.97790  |
+|  test   |  -1500861377121772800.00000  |  0.70588    |  0.07970  |  -0.06164  |  0.85959  |
+
+EDA手法を見直して、数値尺度と名義尺度で行うpreprocessingを変更。testデータに対し当てはまりがよろしくない。
+ここでそういえばp値とシャピロウィルク検定を全く考慮していなかったことを思い出す。
+
+
