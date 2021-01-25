@@ -41,4 +41,34 @@ KaggleへSubmit。
 EDA手法を見直して、数値尺度と名義尺度で行うpreprocessingを変更。testデータに対し当てはまりがよろしくない。
 ここでそういえばp値とシャピロウィルク検定を全く考慮していなかったことを思い出す。
 
+- 人による変数ピックアップは、人のバイアスが影響する可能性がある
+- 独立変数を減らしてしっかり予測できるのが良いモデル
+- 過度な独立変数は汎用性がない、過学習が起きやすくなる
 
+
+## 4th Try
+Backward Eliminationを用いて独立変数を選択。"理論と実践から学ぶ機械学習のすべて with Python"より。
+```
+import statsmodels.api as sm
+X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
+X_opt = X[:, [0, 1, 2, 3, 4, 5]]
+X_opt = X_opt.astype(np.float64)
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()X_opt = X[:, [0, 1, 3, 4, 5]]
+ 
+X_opt = X_opt.astype(np.float64)
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()X_opt = X[:, [0, 3, 4, 5]]
+ 
+X_opt = X_opt.astype(np.float64)
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()X_opt = X[:, [0, 3, 5]]
+ 
+X_opt = X_opt.astype(np.float64)
+regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+regressor_OLS.summary()X_opt = X[:, [0, 3]]
+ 
+X_opt = X_opt.astype(np.float64)regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+ 
+regressor_OLS.summary()
+```
