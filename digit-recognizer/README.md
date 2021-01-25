@@ -6,7 +6,7 @@
  +- Python 3.6  
  +- Tensorflow 2.1  
  +- numpy  
- +- pandas 
+ +- pandas  
  +- scikit-learn   
 パッケージインストールは基本condaコマンドを使用するとスムーズだった。pipとcondaを混在するとギルティ。
 
@@ -31,3 +31,23 @@ Epoch 50/50
 score = cnn.evaluate(X_test, y_test)
 4200/4200 [==============================] - 1s 258us/sample - loss: 0.1736 - accuracy: 0.9898
 ```
+
+
+## 2nd Try, CNN
+上位の方のNotebookも拝見しながら、トライアンドエラー。[Introduction to CNN Keras - 0.997 (top 6%)](https://www.kaggle.com/yassineghouzam/introduction-to-cnn-keras-0-997-top-6)
+ドロップアウトについて理解しておけば、過学習を正しく防ぐことができる。[過学習と学習不足について知る](https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja)
+```
+Epoch 18/20
+1680/1680 [==============================] - 62s 37ms/step - loss: 0.0186 - accuracy: 0.9947
+Epoch 19/20
+1680/1680 [==============================] - 62s 37ms/step - loss: 0.0187 - accuracy: 0.9936
+Epoch 20/20
+1680/1680 [==============================] - 62s 37ms/step - loss: 0.0168 - accuracy: 0.9947
+
+score = cnn.evaluate(X_test, y_test)
+263/263 [==============================] - 4s 13ms/step - loss: 0.0382 - accuracy: 0.9906
+```
+Kaggleへのsubmissionはこんな感じ。
+<p align="center">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_house_predict_1st.PNG">
+</p>
