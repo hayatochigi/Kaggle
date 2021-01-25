@@ -29,7 +29,7 @@ ZScoreによるスケーリングを実施。SVRはkernelがlinearもrbfもい�
 ## 3rd Try
 KaggleへSubmit。
 <p align="center">
-  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_house_predict_1st.PNG">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_digit_2nd.PNG">
 </p>
 
 ## 4th Try
