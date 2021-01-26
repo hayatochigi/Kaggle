@@ -47,28 +47,5 @@ EDA手法を見直して、数値尺度と名義尺度で行うpreprocessingを�
 
 
 ## 4th Try
-Backward Eliminationを用いて独立変数を選択。"理論と実践から学ぶ機械学習のすべて with Python"より。
-```
-import statsmodels.api as sm
-X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
-X_opt = X[:, [0, 1, 2, 3, 4, 5]]
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 1, 3, 4, 5]]
- 
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3, 4, 5]]
- 
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3, 5]]
- 
-X_opt = X_opt.astype(np.float64)
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()X_opt = X[:, [0, 3]]
- 
-X_opt = X_opt.astype(np.float64)regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
- 
-regressor_OLS.summary()
+
 ```
