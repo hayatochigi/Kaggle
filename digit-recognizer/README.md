@@ -47,7 +47,22 @@ Epoch 20/20
 score = cnn.evaluate(X_test, y_test)
 263/263 [==============================] - 4s 13ms/step - loss: 0.0382 - accuracy: 0.9906
 ```
-Kaggleへのsubmissionはこんな感じ。
+Kaggleへのsubmission結果はこちら。
 <p align="center">
   <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_digit_2nd.PNG">
 </p>
+
+## 3rd Try, CNN + Batch Normalization
+[How to choose CNN Architecture MNIST](https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist)を参考に、layerの検証方法と[Batch Normalization](https://deepage.net/deep_learning/2016/10/26/batch_normalization.html)について学び、実装。
+```
+Epoch 47/50
+2100/2100 [==============================] - 6s 3ms/step - loss: 0.0264 - accuracy: 0.9929
+Epoch 48/50
+2100/2100 [==============================] - 6s 3ms/step - loss: 0.0250 - accuracy: 0.9925
+Epoch 49/50
+2100/2100 [==============================] - 6s 3ms/step - loss: 0.0297 - accuracy: 0.9916
+Epoch 50/50
+2100/2100 [==============================] - 6s 3ms/step - loss: 0.0233 - accuracy: 0.9932
+```
+Epochはこれまでのaccuracyより低いが、trainデータをすべて使用し、DropoutとBatch Normalizationで過学習を抑制したことで、テストデータに対しても当てはまりの良い結果となった。
+Kaggleへのsubmission結果は**0.99178**でBest更新。
