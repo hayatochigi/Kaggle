@@ -46,7 +46,7 @@ EDA手法を見直して、数値尺度と名義尺度で行うpreprocessingを�
 - 過度な独立変数は汎用性がない、過学習が起きやすくなる
 
 
-## 4th Try
+## 5th Try
 EDAについてはこちらのnotebookが非常に参考になった。[Stacked Regressions : Top 4% on LeaderBoard](https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard/notebook#Modelling)  
 モデル構築についてはこちら[Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python)  
 Grid Searchなどモデルのチューンを全く指定ない状態で、結構ランキングをあげることができた。
