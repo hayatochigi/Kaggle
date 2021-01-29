@@ -58,5 +58,5 @@ Grid Searchなどモデルのチューンを全く指定ない状態で、結構
 ## 6th Try
 Stacked Modelsの中に、[CatBoost](https://catboost.ai/)を追加。ようやく上位20%以内に到達。。。
 <p align="center">
-  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/kaggle_titanic_2nd_result.PNG">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/house_stacked_model_with_CatBoost.png">
 </p>
