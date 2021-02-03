@@ -47,8 +47,8 @@ EDA手法を見直して、数値尺度と名義尺度で行うpreprocessingを�
 
 
 ## 5th Try
-- [Stacked Regressions : Top 4% on LeaderBoard](https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard/notebook#Modelling) EDAについて非常に参考になった。
-- [Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python) モデル構築についてはこちら。
+- [Stacked Regressions : Top 4% on LeaderBoard](https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard/notebook#Modelling) モデル構築について非常に参考になった。
+- [Comprehensive data exploration with Python](https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python) EDAに関してはこちら。
 
 Grid Searchなどモデルのチューンを全く指定ない状態で、結構ランキングをあげることができた。
 <p align="center">
