@@ -54,3 +54,11 @@ RMSE mean = 0.8438536808283884
 RMSE = [0.8419508921091942, 0.8456143349146623, 0.846160590374425, 0.842607144534302, 0.8429354422093588]
 ```
 
+### One-Hot Encoding + RobustScaler + Optuna
+```
+LightGBM Best is trial 26 with value: 0.840814232174324
+{'num_leaves': 87, 'max_depth': 9, 'learning_rate': 0.009582240516938432, 'n_estimators': 2553, 'reg_alpha': 0.037580598353005736, 'reg_lambda': 0.02686007922451687, 'colsample_bytree': 0.5534542046480458}
+
+XGBoost Best is trial 16 with value: 0.8414031616263706
+{'eta': 0.6967322281466614, 'gamma': 0.0036942646535044962, 'max_depth': 6, 'sub_sample': 0.553569633282626, 'colsample_bytree': 0.554663669927102, 'lambda': 0.001701369247469206, 'alpha': 0.009630419498745284, 'learning_rate': 0.03446986865236482, 'n_estimators': 603}
+```
