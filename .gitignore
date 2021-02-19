@@ -3,3 +3,4 @@ digit-recognizer/data/train.csv
 digit-recognizer/digit-recognizer.zip
 flower-recognizer/data
 */catboost_info
+solafune-predict-land-prices/data
