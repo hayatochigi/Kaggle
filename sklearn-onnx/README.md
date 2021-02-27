@@ -3,7 +3,7 @@ Train a Scikit-learn model in [Docker](https://www.docker.com/) container and co
 Then, Do prediction in LabVIEW by calling the prediction script with [Python Node](https://zone.ni.com/reference/en-XX/help/371361R-01/glang/python_node/).
 
 <p align="center">
-  <img width="800" src="https://github.com/hayatochigi/images/blob/master/Kaggle/sklearn-onnx-in-LabVIEW.bmp">
+  <img width="600" src="https://github.com/hayatochigi/images/blob/master/Kaggle/sklearn-onnx-in-LabVIEW.bmp">
 </p>
 
 ## Installation on Windows
