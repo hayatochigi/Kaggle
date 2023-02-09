@@ -1,5 +1,5 @@
 # sklearn-onnx with LabVIEW
-> こちらの内容に関して技術ご支援も可能です。ご希望の方はお問合せください。
+> こちらの内容に関して技術支援も可能です。ご希望の方はお問合せください。
 
 Train a Scikit-learn model in [Docker](https://www.docker.com/) container and convert it to [ONNX](https://onnx.ai/) format. 
 Then, Do prediction in LabVIEW by calling the prediction script with [Python Node](https://zone.ni.com/reference/en-XX/help/371361R-01/glang/python_node/).
